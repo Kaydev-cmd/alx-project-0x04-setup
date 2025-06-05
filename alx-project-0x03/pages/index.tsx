@@ -36,6 +36,15 @@ export default function Home() {
           buttonLabel="Generate Text"
           buttonBackgroundColor="blue"
         />
+        <Button
+          action={() =>
+            routeToNextPage({
+              pageRoute: "/text-to-image",
+            })
+          }
+          buttonLabel="Text to Image"
+          buttonBackgroundColor="green"
+        />
       </div>
     </div>
   );
