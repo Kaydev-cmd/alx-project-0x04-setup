@@ -7,8 +7,14 @@ interface LayoutProps {
   children: ReactNode;
 }
 
-const Layout: React.FC = () => {
-  return <div>Layout</div>;
+const Layout: React.FC<LayoutProps> = ({ children }) => {
+  return (
+    <>
+      <Header />
+      <main>{children}</main>
+      <Footer />
+    </>
+  );
 };
 
 export default Layout;
