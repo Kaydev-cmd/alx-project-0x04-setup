@@ -10,6 +10,12 @@ const Custom404: React.FC = () => {
       <p className="text-2xl mb-8">
         We can't seem to find the page you're looking for.
       </p>
+
+      {/* Funny Message */}
+      <p className="text-lg mb-8 text-center max-w-md">
+        Maybe it was abducted by aliens 👽, or it just took a wrong turn into
+        the Internet wilderness! Either way, it's not here.
+      </p>
     </div>
   );
 };
