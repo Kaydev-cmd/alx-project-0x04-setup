@@ -24,6 +24,19 @@ export default function Home() {
         Your one-stop platform for everything AI you need. Start exploring by
         navigating to our features below.
       </p>
+
+      {/* Navigation Options */}
+      <div className="flex gap-6">
+        <Button
+          action={() =>
+            routeToNextPage({
+              pageRoute: "/generate-text-ai",
+            })
+          }
+          buttonLabel="Generate Text"
+          buttonBackgroundColor="blue"
+        />
+      </div>
     </div>
   );
 }
