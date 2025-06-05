@@ -7,11 +7,42 @@ const Footer: React.FC = () => {
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <h3 className="text-xl font-bold mb-4">Splash App</h3>
-          <p>
+          <p className="text-gray-400 mb-4">
             Your one-stop platform for all your needs. Connecting people,
             creating opportunities.
           </p>
-          <p>&copy; 2024 Splash App. All rights reserved.</p>
+          <p className="text-gray-400">
+            &copy; 2024 Splash App. All rights reserved.
+          </p>
+        </div>
+        <div>
+          <h4 className="text-lg font-semibold mb-4">Useful Links</h4>
+          <ul>
+            <li className="mb-2">
+              <a
+                href="/about"
+                className="text-gray-400 hover:text-white transition duration-300"
+              >
+                About us
+              </a>
+            </li>
+            <li className="mb-2">
+              <a
+                href="/services"
+                className="text-gray-400 hover:text-white transition duration-300"
+              >
+                Services
+              </a>
+            </li>
+            <li className="mb-2">
+              <a
+                href="/contact"
+                className="text-gray-400 hover:text-white transition duration-300"
+              >
+                Contact Us
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
