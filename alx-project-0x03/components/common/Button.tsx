@@ -1,11 +1,5 @@
 import React from "react";
-
-interface ButtonProps {
-  buttonLabel: string;
-  buttonSize?: string;
-  buttonBackgroundColor?: "red" | "blue" | "orange" | "green";
-  action?: () => void;
-}
+import { ButtonProps } from "@/interfaces";
 
 const Button = ({
   buttonLabel,
