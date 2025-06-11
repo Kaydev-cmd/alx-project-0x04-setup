@@ -25,6 +25,30 @@ const CounterApp: React.FC = () => {
           ? "🔥 You're in fire!"
           : ""}
       </p>
+
+      {/* Counter Display */}
+      <div className="text-6xl font-bold mb-8">{count}</div>
+
+      {/* Buttons */}
+      <div className="flex space-x-4">
+        <button
+          onClick={increment}
+          className="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-8 rounded-full text-lg transition duration-300 shadow-lg transform hover:scale-105"
+        >
+          Increment 🚀
+        </button>
+        <button
+          onClick={decrement}
+          className="bg-red-500 hover:bg-red-600 text-white font-semibold py-3 px-8 rounded-full text-lg transition duration-300 shadow-lg transform hover:scale-105"
+        >
+          Decrement 👎
+        </button>
+      </div>
+
+      {/* Footer message */}
+      <p className="mt-8 text-sm text-white opacity-75">
+        Keep clicking, who know what happens after 100? 😏
+      </p>
     </div>
   );
 };
