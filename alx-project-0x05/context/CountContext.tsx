@@ -5,3 +5,11 @@ interface CountContextProps {
   increment: () => void;
   decrement: () => void;
 }
+
+export const CountContext = createContext<CountContextProps | undefined>(
+  undefined
+);
+
+export const CountProvider = ({ children }: { children: ReactNode }) => {
+  const [count, setCount] = useState<number>(0);
+};
