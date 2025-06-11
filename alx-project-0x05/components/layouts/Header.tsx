@@ -20,8 +20,14 @@ const Header: React.FC = () => {
 
         {/* Button Group */}
         <div className="flex gap-4">
-          <Button buttonLabel="Sign In" buttonBackgroundColor="red" />
-          <Button buttonLabel="Sign Up" buttonBackgroundColor="blue" />
+          {!["counter-app"].includes(pathname) ? (
+            <>
+              <Button buttonLabel="Sign In" buttonBackgroundColor="red" />
+              <Button buttonLabel="Sign Up" buttonBackgroundColor="blue" />
+            </>
+          ) : (
+            <p className="font-semibold text-lg">Current count : {count} </p>
+          )}
         </div>
       </div>
     </header>
