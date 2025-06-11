@@ -20,7 +20,7 @@ const Header: React.FC = () => {
 
         {/* Button Group */}
         <div className="flex gap-4">
-          {!["counter-app"].includes(pathname) ? (
+          {!["/counter-app"].includes(pathname) ? (
             <>
               <Button buttonLabel="Sign In" buttonBackgroundColor="red" />
               <Button buttonLabel="Sign Up" buttonBackgroundColor="blue" />
