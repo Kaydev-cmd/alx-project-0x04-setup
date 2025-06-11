@@ -13,6 +13,7 @@ const Button = ({
         blue: "bg-blue-500",
         orange: "bg-orange-500",
         green: "bg-green-500",
+        pink: "bg-pink-500",
       }[buttonBackgroundColor]
     : "bg-slate-500";
 
