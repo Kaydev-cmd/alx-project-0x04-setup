@@ -1,5 +1,13 @@
 import React, { useState } from "react";
 import { useCount } from "@/context/CountContext";
+import { useSelector } from "react-redux";
+import {
+  RootState,
+  useAppDispatch,
+  AppDispatch,
+  increment,
+  decrement,
+} from "@/store/store";
 
 const CounterApp: React.FC = () => {
   const { count, increment, decrement } = useCount();

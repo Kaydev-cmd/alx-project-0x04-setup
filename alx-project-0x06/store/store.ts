@@ -1,6 +1,5 @@
 import { configureStore, createSlice } from "@reduxjs/toolkit";
 import { useDispatch } from "react-redux";
-import { UseDispatch } from "react-redux";
 
 const counterSlice = createSlice({
   name: "counter",
