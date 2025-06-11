@@ -1,4 +1,5 @@
 import { configureStore, createSlice } from "@reduxjs/toolkit";
+import { useDispatch } from "react-redux";
 import { UseDispatch } from "react-redux";
 
 const counterSlice = createSlice({
@@ -25,3 +26,9 @@ const store = configureStore({
 export const { increment, decrement } = counterSlice.actions;
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
+
+export const useAppDispatch = () => {
+  useDispatch<AppDispatch>();
+};
+
+export default store;
